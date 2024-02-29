@@ -1,0 +1,12 @@
+type Student {
+    id: ID!
+    firstName: String!
+    lastName: String!
+    address: String
+    telephone: String
+}
+
+type Query {
+    getStudent(id: ID!): Student
+    countStudents: Int
+}

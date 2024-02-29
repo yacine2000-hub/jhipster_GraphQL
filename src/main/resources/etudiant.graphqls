@@ -1,0 +1,17 @@
+schema {
+    query: Query
+}
+
+type Query {
+   getAllEtudiant:[Etudiant]
+    findEtudiant(telephone:String):Etudiant
+}
+type Etudiant{
+    id: Int
+    prenom: String
+    nom: String
+    adresse: String
+    telephone: String
+
+
+}
